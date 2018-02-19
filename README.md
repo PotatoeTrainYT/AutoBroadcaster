@@ -6,23 +6,26 @@ Broadcast messages to your server with ease!
  [![Download](https://img.shields.io/badge/download-latest-blue.svg)](https://poggit.pmmp.io/ci/PotatoeTrainYT/AutoBroadcaster/~) | [![View Count](http://hits.dwyl.io/PotatoeTrainYT/AutoBroadcaster.svg)](http://hits.dwyl.io/PotatoeTrainYT/AutoBroadcaster) |
 
 # Features
-- [x] Message Variables
-- [x] Configurable Timer
-- [x] Editabe Messages
+- [x] Message variables
+- [x] Configurable timer
+- [x] Editable messages
+- [x] Color coding within messages
 
 # settings.yml
-```---
-# AutoBroadcaster (AB) Settings
+```YML---
+# AutoBroadcaster Settings
 
-# Seconds between each message
+# Seconds between each broadcasted message
 seconds: 300
 
-# Messages to broadcast
+# Put the messages you want to be broadcasted here:
 messages:
- - "AutoBroadcaster"
- - "Made By Potatoe"
+ - "&eAutoBroadcaster"
+ - "&aMade By &bPotatoeTrainYT"
 
-# Variables
-# {MAXPLAYERS} ~ Gets servers max players limit
+# Variables for messages above:
+# & ~ Use for color coding messages
+# {MAX_PLAYERS} ~ Gets servers max players limit
 # {ONLINE} ~ Gets servers online players count
-...```
+...
+```
