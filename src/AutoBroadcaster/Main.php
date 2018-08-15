@@ -21,7 +21,7 @@ class Main extends PluginBase{
 
     public function scheduler() : void{
         if(is_numeric($this->settings->get("seconds"))){
-            $this->getServer()->getScheduler()->scheduleRepeatingTask(new BroadcastTask($this), $this->settings->get("seconds") * 20);
+            $this->getScheduler()->scheduleRepeatingTask(new BroadcastTask($this), $this->settings->get("seconds") * 20);
         }else{
             $this->getLogger()->warning("Plugin disabling, Seconds is not a numeric value please edit");
             $this->getPluginLoader()->disablePlugin($this);

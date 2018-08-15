@@ -4,15 +4,14 @@ declare(strict_types=1);
 
 namespace AutoBroadcaster;
 
-use pocketmine\scheduler\PluginTask;
+use pocketmine\scheduler\Task;
 
-class BroadcastTask extends PluginTask{
+class BroadcastTask extends Task{
 
     private $main;
 
     public function __construct(Main $main){
         $this->main = $main;
-        parent::__construct($main);
     }
 
     public function onRun(int $currentTick){
